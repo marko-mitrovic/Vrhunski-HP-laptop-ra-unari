@@ -1,0 +1,419 @@
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url(../fonts/SourceSansPro-Regular.otf);
+}
+
+body {
+  font-family: 'SourceSansPro-Regular', sans-serif;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.wrapper {
+  background-color: #000;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+#main .background {
+  background-image: url(../images/main/custom.jpg);
+  height: 444px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#inovativan .background {
+  background-image: url(../images/inovativan/custom.jpg);
+  height: 444px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#fleksibilan .background {
+  background-image: url(../images/fleksibilan/custom.jpg);
+  height: 444px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#siguran .background {
+  background-image: url(../images/siguran/custom.jpg);
+  height: 444px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#izdrzljiv .background {
+  background-image: url(../images/izdrzljiv/custom.jpg);
+  height: 444px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#unapredjen .background {
+  background-image: url(../images/unapredjen/custom.jpg);
+  height: 444px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.group-top {
+  position: relative;
+  bottom: 405px;
+  margin-left: 54%;
+  margin-right: 5%;
+  height: 0;
+  color: #fff;
+}
+
+.group-main {
+  text-align: center;
+  margin: auto 8%;
+}
+
+.group-text {
+  text-align: left;
+  margin: auto 30% auto 7%;
+}
+
+.title-text-right {
+  font-size: 24px;
+  color: #c09441;
+}
+
+.left-image {
+  display: table-cell;
+}
+
+.right-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.left-text{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.right-image{
+  display: table-cell;
+}
+
+.title-main {
+  color: #c09441;
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-top: -15px;
+}
+
+.text-main {
+  font-size: 18px;
+  margin-bottom: 33px;
+}
+
+.title-right {
+  font-size: 24px;
+  color: #c09441;
+  margin-bottom: 0;
+}
+
+.text-right {
+  font-size: 16px;
+  color: #fff;
+}
+
+.title-left {
+  font-size: 24px;
+  color: #c09441;
+  margin-bottom: 0;
+}
+
+.text-left {
+  font-size: 16px;
+  color: #fff;
+}
+
+.title-top {
+  font-size: 52px;
+  margin-bottom: 0;
+}
+
+.text-top {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.mobile {
+  display: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1efef;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 15.2px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.active {
+  background-color: #c09441;
+  color: #fff !important;
+}
+
+.topnav .active:hover {
+  background-color: #c09441;
+  opacity: unset;
+  color: #fff;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .group-text {
+    text-align: left;
+    margin: auto 25px 40px;
+  }
+
+  .left-image,
+  .right-image,
+  .left-text,
+  .left-text,
+  .group-a {
+    display: unset;
+  }
+
+  .right-text {
+    display: block;
+  }
+
+  .topnav {
+    margin-bottom: -32px;
+  }
+
+  .pad-a {
+    padding-top: 30px;
+  }
+
+  #unapredjen .group-top {
+    margin-left: 47%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 656px) {
+
+  #main .group-top {
+    bottom: 415px;
+    margin-left: 50%;
+  }
+
+  #inovativan .group-top {
+    margin-left: 33%;
+  }
+
+  #fleksibilan .group-top {
+    margin-left: 49%;
+  }
+
+  #siguran .group-top,
+  #unapredjen .group-top {
+    margin-left: 44%;
+  }
+
+  #izdrzljiv .group-top {
+    margin-left: 52%;
+  }
+
+}
+
+@media screen and (max-width: 556px) {
+
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #fleksibilan .group-top {
+    margin-left: 45%;
+  }
+
+  #unapredjen .group-top {
+    margin-left: 38%;
+  }
+
+}
+
+@media screen and (max-width: 489px) {
+
+  #main .group-top {
+    margin-left: 46%;
+  }
+
+  #fleksibilan .group-top {
+    margin-left: 39%;
+  }
+
+  #siguran .group-top {
+    margin-left: 40%;
+  }
+
+  #unapredjen .group-top {
+    margin-left: 33%;
+  }
+
+  #izdrzljiv .group-top {
+    margin-left: 50.5%;
+  }
+
+}
+
+@media screen and (max-width: 426px) {
+
+  #inovativan .group-top {
+    margin-left: 23%;
+  }
+
+  #fleksibilan .group-top {
+    margin-left: 33%;
+  }
+
+  #siguran .group-top {
+    margin-left: 34%;
+  }
+
+  #unapredjen .group-top {
+    margin-left: 22%;
+  }
+
+  #izdrzljiv .group-top {
+    margin-left: 47%;
+  }
+
+}
+
+@media screen and (max-width: 376px) {
+
+  #inovativan .group-top {
+    margin-left: 20%;
+  }
+
+  #fleksibilan .group-top {
+    margin-left: 27%;
+  }
+
+  #siguran .group-top {
+    margin-left: 28.5%;
+  }
+
+  #unapredjen .group-top {
+    margin-left: 16%;
+  }
+
+  #izdrzljiv .group-top {
+    margin-left: 43%;
+  }
+
+}
+
+@media screen and (max-width: 356px) {
+
+  #fleksibilan .group-top {
+    margin-left: 24%;
+  }
+
+}
+
+@media screen and (max-width: 336px) {
+
+  #fleksibilan .group-top {
+    margin-left: 21%;
+  }
+
+}
+
+@media screen and (max-width: 321px) {
+
+  #main .group-top {
+    margin-left: 41%;
+  }
+
+  #inovativan .group-top {
+    margin-left: 14%;
+  }
+
+  #fleksibilan .group-top {
+    margin-left: 19%;
+  }
+
+  #siguran .group-top {
+    margin-left: 18.5%;
+  }
+
+  #unapredjen .group-top {
+    margin-left: 8%;
+  }
+
+  #izdrzljiv .group-top {
+    margin-left: 40%;
+  }
+
+}
